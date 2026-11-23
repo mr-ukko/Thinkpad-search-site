@@ -13,6 +13,11 @@
       { key: "ibm", name: "IBM ThinkPads", era: "1992 – 2005", blurb: "The originals: butterfly keyboards, Pentium M and classic black boxes." },
       { key: "lenovo", name: "Lenovo ThinkPads", era: "2005 – today", blurb: "From the T60 to the latest X1 Carbon: the Lenovo era." },
     ],
+    // External tools shown in the top bar of every site
+    tools: [
+      { name: "TPFanCtrl2", url: "https://github.com/Shuzhengz/TPFanCtrl2" },
+      { name: "TPFanControl", url: "https://thinkwiki.de/TPFanControl" },
+    ],
     // TP.url("") -> main site, TP.url("ibm", "/t42/") -> ibm site
     url: function (sub, path) {
       return location.protocol + "//" + (sub ? sub + "." : "") + domain + port + (path || "/");
