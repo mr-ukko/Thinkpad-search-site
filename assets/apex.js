@@ -13,9 +13,8 @@
 
     var header = document.createElement("header");
     header.className = "site-header";
-    header.innerHTML = '<div class="wrap"><span class="brand"><a class="brand-name" href="/">Think<b>Pad</b></a>' +
-      '<a class="era era-icon" href="/" title="thinkpad.fi"><img src="/favicon.svg" alt="thinkpad.fi" width="22" height="22">' +
-      (TP.local ? "<small>local</small>" : "") + '</a></span><nav class="nav">' +
+    header.innerHTML = '<div class="wrap"><a class="brand" href="/" title="thinkpad.fi">Think<b>Pad</b><span class="era era-icon"><img src="/favicon.svg" alt="thinkpad.fi" width="22" height="22">' +
+      (TP.local ? "<small>local</small>" : "") + '</span></a><nav class="nav">' +
       BRANDS.map(function (b) { return '<a href="' + TP.url(b.key) + '">' + esc(b.name) + "</a>"; }).join("") +
       TP.tools.map(function (t) { return '<a class="ext" href="' + esc(t.url) + '" target="_blank" rel="noopener">' + esc(t.name) + "</a>"; }).join("") +
       "</nav></div>";

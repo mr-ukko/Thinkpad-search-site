@@ -100,12 +100,10 @@ table.specs.ports td.qty{white-space:nowrap;width:70px}
 /* ---- brand icon + external tool links ---- */
 .nav a.ext::after{content:" \2197";font-size:.8em;opacity:.7}
 
-/* ---- brand: "ThinkPad" link + pill linking to thinkpad.fi ---- */
+/* ---- brand: "ThinkPad" + pill is ONE link to thinkpad.fi ---- */
 .brand{display:inline-flex;align-items:center}
-.brand a{color:inherit}
-.brand a:hover{text-decoration:none}
-.brand a.era{color:var(--muted)}
-.brand a.era:hover{border-color:var(--accent);color:var(--text)}
+.brand:hover{text-decoration:none}
+.brand:hover .era{border-color:var(--accent);color:var(--text)}
 .brand .era-icon{display:inline-flex;align-items:center;gap:6px;padding:3px 8px 3px 4px;text-transform:none}
 .brand .era-icon img{display:block;border-radius:6px}
 .brand .era-icon small{font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
